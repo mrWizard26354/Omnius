@@ -205,11 +205,7 @@ omnius/
 
 ## Future Terminals (Planned)
 
-- **MU/TH/UR 6000** — Weyland-Yutani (Alien universe)
-- **Colossus Defense Network** — The Forbin Project
-- **ENCOM / CLU 2.0** — Tron: Legacy
 - **X-Files Case Archive** — FBI / Syndicate
-- **Batcomputer** — Wayne Enterprises
 - **Dune Archive** — Bene Gesserit / CHOAM
 
 ---

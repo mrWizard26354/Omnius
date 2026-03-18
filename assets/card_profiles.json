@@ -1,0 +1,122 @@
+{
+  "1": {
+    "label": "Containment and Collection Interface",
+    "system": "ghostbusters",
+    "access_level": "Technician",
+    "node": "GB-01"
+  },
+  "2": {
+    "label": "InGen Park and Wildlife Control",
+    "system": "ingen",
+    "access_level": "Operations",
+    "node": "JP-01"
+  },
+  "3": {
+    "label": "Skynet Defense Network",
+    "system": "skynet",
+    "access_level": "Restricted",
+    "node": "SK-01"
+  },
+  "4": {
+    "label": "Zion Mainframe",
+    "system": "zion",
+    "access_level": "Operator",
+    "node": "MX-01"
+  },
+  "5": {
+    "label": "Umbrella Biohazard Research Network",
+    "system": "umbrella",
+    "access_level": "Research",
+    "node": "UR-01"
+  },
+  "6": {
+    "label": "ENCOM MCP Grid System",
+    "system": "tron",
+    "access_level": "User",
+    "node": "EC-01"
+  },
+  "7": {
+    "label": "WOPR Strategic Command",
+    "system": "wopr",
+    "access_level": "Restricted",
+    "node": "WG-01"
+  },
+  "8": {
+    "label": "U.S.A.C. Search and Rescue Logs",
+    "system": "event_horizon",
+    "access_level": "Classified",
+    "node": "EH-01"
+  },
+  "9": {
+    "label": "Off-World Data Archive",
+    "system": "blade_runner",
+    "access_level": "Investigator",
+    "node": "TC-01"
+  },
+  "0": {
+    "label": "PreCrime Police Database",
+    "system": "precrime",
+    "access_level": "Detective",
+    "node": "PC-01"
+  },
+  "GB-01": {
+    "label": "Containment and Collection Interface",
+    "system": "ghostbusters",
+    "access_level": "Technician",
+    "node": "GB-01"
+  },
+  "JP-01": {
+    "label": "InGen Park and Wildlife Control",
+    "system": "ingen",
+    "access_level": "Operations",
+    "node": "JP-01"
+  },
+  "SK-01": {
+    "label": "Skynet Defense Network",
+    "system": "skynet",
+    "access_level": "Restricted",
+    "node": "SK-01"
+  },
+  "MX-01": {
+    "label": "Zion Mainframe",
+    "system": "zion",
+    "access_level": "Operator",
+    "node": "MX-01"
+  },
+  "UR-01": {
+    "label": "Umbrella Biohazard Research Network",
+    "system": "umbrella",
+    "access_level": "Research",
+    "node": "UR-01"
+  },
+  "EC-01": {
+    "label": "ENCOM MCP Grid System",
+    "system": "tron",
+    "access_level": "User",
+    "node": "EC-01"
+  },
+  "WG-01": {
+    "label": "WOPR Strategic Command",
+    "system": "wopr",
+    "access_level": "Restricted",
+    "node": "WG-01"
+  },
+  "EH-01": {
+    "label": "U.S.A.C. Search and Rescue Logs",
+    "system": "event_horizon",
+    "access_level": "Classified",
+    "node": "EH-01"
+  },
+  "TC-01": {
+    "label": "Off-World Data Archive",
+    "system": "blade_runner",
+    "access_level": "Investigator",
+    "node": "TC-01"
+  },
+  "PC-01": {
+    "label": "PreCrime Police Database",
+    "system": "precrime",
+    "access_level": "Detective",
+    "node": "PC-01"
+  }
+}

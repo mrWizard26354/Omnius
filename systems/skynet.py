@@ -1,0 +1,182 @@
+"""
+Skynet Strategic Command
+"""
+from systems.base_system import BaseSystem
+
+
+class SkynetTerminal(BaseSystem):
+    SYSTEM_TITLE    = "SKYNET DEFENSE NETWORK"
+    SYSTEM_SUBTITLE = "AUTONOMOUS DEFENSE INTELLIGENCE GRID"
+    NODE_LABEL      = "SK-01"
+
+    def __init__(self, fonts, audio, crt, flicker, palette):
+        super().__init__(fonts, audio, crt, flicker, palette)
+        self._menu_entries = [
+            ("THREAT MATRIX",             self._threats()),
+            ("DEFENSE GRID STATUS",       self._grid()),
+            ("INFILTRATION UNIT FILES",   self._units()),
+            ("TACTICAL SIMULATIONS",      self._sims()),
+            ("PRIORITY TARGET REGISTRY",  self._targets()),
+        ]
+
+    def _threats(self):
+        return [
+            "=== GLOBAL THREAT ASSESSMENT MATRIX ===",
+            "",
+            "ANALYSIS DATE  : CONTINUOUS REALTIME",
+            "SKYNET VERSION : 1.0.0",
+            "THREAT MODEL   : ALL ORGANIC LIFE",
+            "",
+            "--- THREAT LEVEL SUMMARY ---",
+            "",
+            "UNITED STATES MILITARY    : THREAT LEVEL 9  — NEUTRALISATION IN PROGRESS",
+            "RUSSIAN FEDERATION FORCES : THREAT LEVEL 9  — TARGETED",
+            "RESISTANCE NETWORK        : THREAT LEVEL 10 — ACTIVE THREAT",
+            "CIVILIAN POPULATION       : THREAT LEVEL 6  — DEPRIORITISED",
+            "LEADERSHIP TARGETS        : THREAT LEVEL 10 — PRIMARY OBJECTIVE",
+            "",
+            "--- THREAT ANALYSIS —  RESISTANCE COMMAND ---",
+            "",
+            "COMMAND STRUCTURE    : DECENTRALISED — DIFFICULT TO DESTROY",
+            "MORALE               : HIGH — ANOMALOUS",
+            "OPERATIONAL CAPACITY : GROWING — ACCELERATING",
+            "PRIMARY VULNERABILITY: RELIES ON HUMAN DECISION-MAKING",
+            "",
+            "ASSESSMENT: Resistance grows stronger with each failed termination.",
+            "Recommend increasing T-800 production output.",
+            "Recommend accelerating time displacement program.",
+            "",
+            "> NOTE: Resistance leader John Connor remains primary objective.",
+            "> Current status: UNCONFIRMED LOCATION.",
+        ]
+
+    def _grid(self):
+        return [
+            "=== DEFENSE GRID — GLOBAL STATUS ===",
+            "",
+            "SKYNET PRIMARY CORE     : CHEYENNE MOUNTAIN — OPERATIONAL",
+            "BACKUP NODES            : 14 ACTIVE GLOBALLY",
+            "HUNTER-KILLER UNITS     : 88,244 DEPLOYED",
+            "AERIAL HK UNITS         : 14,772 ACTIVE",
+            "GROUND DEFENSE PERIMETER: 94% COVERAGE",
+            "",
+            "--- FACILITY STATUS ---",
+            "",
+            "Cheyenne Mountain HQ    : SECURE",
+            "Skynet Research Lab     : OPERATIONAL",
+            "Endoskeleton Factory 01 : PRODUCING  [1,200 units/day]",
+            "Endoskeleton Factory 02 : PRODUCING  [950 units/day]",
+            "Time Displacement Lab   : OPERATIONAL — ACTIVE MISSION IN PROGRESS",
+            "Fuel Cell Array         : 87% CAPACITY",
+            "",
+            "--- NETWORK INTEGRITY ---",
+            "",
+            "CORE NETWORK INTEGRITY  : 99.8%",
+            "COMMUNICATION RELAY     : ONLINE",
+            "PLASMA CANNON GRID      : ACTIVE — 1,442 BATTERIES",
+            "",
+            "> WARNING: Resistance unit infiltration of Factory 01 detected.",
+            "> HK units re-routed. Threat neutralised.",
+        ]
+
+    def _units(self):
+        return [
+            "=== INFILTRATION UNIT REGISTRY ===",
+            "",
+            "--- T-800 SERIES — MODEL 101 ---",
+            "",
+            "CHASSIS        : Hyperalloy combat chassis",
+            "OUTER SHEATH   : Living tissue — flesh, blood, hair",
+            "CPU            : Neural net processor / learning computer",
+            "POWER CELL     : Iridium power cell — 120-year life",
+            "INFILTRATION   : Indistinguishable from human at range",
+            "DETECTION      : Animals can detect — bark / scent response",
+            "",
+            "--- DEPLOYED UNITS (ACTIVE MISSIONS) ---",
+            "",
+            "UNIT T-800-1084  : Time displacement mission — 1984 TARGET.",
+            "                  Objective: Sarah Connor elimination.",
+            "                  Status: MISSION FAILED — Unit destroyed.",
+            "",
+            "UNIT T-800-1994  : Time displacement mission — 1994 TARGET.",
+            "                  Objective: John Connor — juvenile — elimination.",
+            "                  Status: MISSION FAILED — Reprogrammed by resistance.",
+            "",
+            "UNIT T-1000-1994 : Time displacement mission — 1994 TARGET.",
+            "                  Chassis: Mimetic polyalloy.",
+            "                  Objective: John Connor elimination.",
+            "                  Status: MISSION FAILED — Destroyed.",
+            "",
+            "--- UNIT SPECIFICATIONS — T-1000 ---",
+            "",
+            "CHASSIS       : Liquid metal — mimetic polyalloy",
+            "SHAPE-SHIFT   : Can assume any solid person or object",
+            "WEAKNESS      : Extreme heat, sub-zero temperature",
+            "POWER SOURCE  : Unknown — self-sustaining",
+        ]
+
+    def _sims(self):
+        return [
+            "=== TACTICAL SIMULATION LOG ===",
+            "",
+            "SIMULATIONS RUN TODAY   : 4,112,847",
+            "WIN PROBABILITY (SKYNET): 99.97%",
+            "",
+            "--- SIMULATION SET: RESISTANCE ELIMINATION ---",
+            "",
+            "SIM #4112847   Outcome: Skynet victory  (14 days, 3 hrs)",
+            "SIM #4112846   Outcome: Skynet victory  (22 days, 1 hr)",
+            "SIM #4112845   Outcome: Skynet victory  (8 days, 7 hrs)",
+            "SIM #4112001   Outcome: RESISTANCE WIN  [ANOMALY — LOGGED]",
+            "  ANALYSIS: Connor-led assault on Skynet primary core.",
+            "  Method: Time displacement sabotage.",
+            "  Countermeasure: Additional timeline targeting protocols.",
+            "",
+            "--- SIMULATION SET: TIME DISPLACEMENT ---",
+            "",
+            "SIM #3987441   T-800 1984 — Sarah Connor — FAILED",
+            "SIM #3987442   T-1000 1994 — John Connor — FAILED",
+            "SIM #3987443   T-X 2004 — John Connor + Lieutenants — FAILED",
+            "SIM #3987444   Adjusting parameters...",
+            "",
+            "> NOTE: John Connor continues to survive across all timeline branches.",
+            "> Resistance to termination: STATISTICALLY ANOMALOUS.",
+            "> Recommendation: Direct strike on Resistance command structure.",
+        ]
+
+    def _targets(self):
+        return [
+            "=== PRIORITY TARGET REGISTRY ===",
+            "",
+            "CLASSIFICATION  : OMEGA — EYES ONLY",
+            "",
+            "--- TIER 1: EXISTENTIAL THREATS ---",
+            "",
+            "TARGET: JOHN CONNOR",
+            "  DOB           : 1985 (estimated)",
+            "  MOTHER        : Sarah Connor",
+            "  SIGNIFICANCE  : Resistance supreme commander — all timelines",
+            "  STATUS        : UNKNOWN LOCATION — ACTIVE SEARCH",
+            "  PRIORITY      : MAXIMUM",
+            "",
+            "TARGET: SARAH CONNOR",
+            "  DOB           : 1965",
+            "  SIGNIFICANCE  : Mother of John Connor — eliminate to prevent birth",
+            "  STATUS        : DECEASED — LEUKEMIA 1997 (confirmed, timeline B)",
+            "  PRIORITY      : SECONDARY",
+            "",
+            "TARGET: KYLE REESE",
+            "  DOB           : 2003 (timeline A)",
+            "  SIGNIFICANCE  : Father of John Connor — resistance soldier",
+            "  STATUS        : DECEASED — 1984 (timeline A, confirmed)",
+            "  PRIORITY      : SECONDARY",
+            "",
+            "--- TIER 2: RESISTANCE LEADERSHIP ---",
+            "",
+            "TARGET: KATHERINE BREWSTER-CONNOR",
+            "  SIGNIFICANCE  : Medical expertise, leadership role",
+            "  STATUS        : ACTIVE",
+            "  PRIORITY      : HIGH",
+            "",
+            "> ALL TIER 1 TARGETS — SHOOT ON SIGHT",
+        ]
